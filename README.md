@@ -1,6 +1,6 @@
 # The Library Application
 
-The Library Application is a desktop application designed to manage collections of items such as books, movies, music, and games. It provides a graphical user interface (GUI) for users to interact with their collections, add new items, search for items, and manage their preferences.
+The Library is a desktop application designed to manage collections of items such as books, movies, music, and games. Allowing for a way for users to interact with their collections, add new items, search for items, and manage their preferences.
 
 ## Table of Contents
 
@@ -14,9 +14,6 @@ The Library Application is a desktop application designed to manage collections 
   - [Main](#main)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Logging](#logging)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -85,16 +82,3 @@ The application follows a Model-View-Controller (MVC) architecture:
 - **Managing Collections**: Add new collections and items using the provided buttons and dialogs.
 - **Searching**: Enter a search term in the search frame to find items across all collections.
 - **Theme Preference**: Toggle between light and dark themes in the settings window.
-
-## Logging
-
-The application logs important events and errors to a log file located in the user's data directory. This helps in diagnosing issues and understanding application behavior.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
