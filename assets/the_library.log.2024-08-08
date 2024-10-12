@@ -1,0 +1,42 @@
+2024-08-08 14:20:24 - TheLibrary - INFO - CollectionManager initialized
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-08-08 14:20:24 - TheLibrary - INFO - Controller initialized successfully
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function '__init__' executed in 0.0007 seconds
+2024-08-08 14:20:24 - TheLibrary - INFO - Theme preference loaded: Dark mode = 1
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0002 seconds
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Sidebar setup completed
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function 'setup_sidebar' executed in 0.1545 seconds
+2024-08-08 14:20:24 - TheLibrary - INFO - Retrieved 0 collections
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Main content setup completed
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function 'setup_main_content' executed in 0.0173 seconds
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function 'setup_settings_window' executed in 0.0013 seconds
+2024-08-08 14:20:24 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-08 14:20:24 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.3048 seconds
+2024-08-08 14:20:30 - TheLibrary - DEBUG - Function 'add_new_collection' executed in 1.3317 seconds
+2024-08-08 14:20:32 - TheLibrary - INFO - GUI main loop started
+2024-08-08 14:20:32 - TheLibrary - DEBUG - Function 'run' executed in 8.2614 seconds
+2024-10-12 00:03:42 - TheLibrary - INFO - CollectionManager initialized
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-10-12 00:03:42 - TheLibrary - INFO - Controller initialized successfully
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function '__init__' executed in 0.0010 seconds
+2024-10-12 00:03:42 - TheLibrary - INFO - Theme preference loaded: Dark mode = 1
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Sidebar setup completed
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function 'setup_sidebar' executed in 0.0818 seconds
+2024-10-12 00:03:42 - TheLibrary - INFO - Retrieved 0 collections
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0002 seconds
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Main content setup completed
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function 'setup_main_content' executed in 0.0170 seconds
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Settings window setup completed
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function 'setup_settings_window' executed in 0.0015 seconds
+2024-10-12 00:03:42 - TheLibrary - INFO - GUI setup completed successfully
+2024-10-12 00:03:42 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2627 seconds
+2024-10-12 00:03:46 - TheLibrary - INFO - Settings window displayed
+2024-10-12 00:03:48 - TheLibrary - INFO - GUI main loop started
+2024-10-12 00:03:48 - TheLibrary - DEBUG - Function 'run' executed in 6.2742 seconds

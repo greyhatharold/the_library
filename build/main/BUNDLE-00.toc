@@ -1,0 +1,3 @@
+([('TheLibrary',
+   '/Users/griffinstrier/The_Library/dist/TheLibrary',
+   'EXECUTABLE')],)

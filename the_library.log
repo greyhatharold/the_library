@@ -1,0 +1,2272 @@
+2024-08-06 22:31:31,345 - INFO - Starting The Library application
+2024-08-06 22:31:31,345 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 22:31:31,345 - ERROR - Unexpected error: <built-in function add_font> returned a result with an exception set
+2024-08-06 22:31:47,984 - INFO - Starting The Library application
+2024-08-06 22:31:47,985 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 22:31:47,985 - ERROR - An error occurred while running the application
+Exception: Error: [1000] Message: 	Font file could not be found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 27, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 7, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 13, in setup_gui
+    default_font = dpg.add_font("path/to/your/font.ttf", 20)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 4341, in add_font
+    return internal_dpg.add_font(file, size, label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, pixel_snapH=pixel_snapH, parent=parent, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_font> returned a result with an exception set
+2024-08-06 22:35:40,785 - INFO - Starting The Library application
+2024-08-06 22:35:40,785 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 23:19:12,237 - INFO - Starting The Library application
+2024-08-06 23:19:12,237 - INFO - Initializing Controller
+2024-08-06 23:19:12,237 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 23:19:12,237 - INFO - Controller initialized successfully
+2024-08-06 23:19:12,237 - INFO - Initializing GUI
+2024-08-06 23:19:12,237 - DEBUG - Starting GUI setup
+2024-08-06 23:19:12,237 - DEBUG - DearPyGui context created
+2024-08-06 23:19:12,237 - DEBUG - Global theme applied
+2024-08-06 23:19:12,237 - DEBUG - Creating main window
+2024-08-06 23:19:12,238 - DEBUG - Table setup completed
+2024-08-06 23:19:12,238 - DEBUG - Creating viewport
+2024-08-06 23:19:12,352 - DEBUG - Collections refreshed
+2024-08-06 23:19:12,352 - ERROR - Error setting up table: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:19:12,354 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:19:12,354 - ERROR - Error in setup_gui: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:19:12,354 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:19:12,354 - CRITICAL - Failed to initialize GUI: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:19:12,355 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:19:12,355 - ERROR - An error occurred while running the application
+Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 32, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:20:35,969 - INFO - Starting The Library application
+2024-08-06 23:20:35,969 - INFO - Initializing Controller
+2024-08-06 23:20:35,969 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 23:20:35,969 - INFO - Controller initialized successfully
+2024-08-06 23:20:35,969 - INFO - Initializing GUI
+2024-08-06 23:20:35,969 - DEBUG - Starting GUI setup
+2024-08-06 23:20:35,969 - DEBUG - DearPyGui context created
+2024-08-06 23:20:35,969 - DEBUG - Global theme applied
+2024-08-06 23:20:35,969 - DEBUG - Creating main window
+2024-08-06 23:20:35,970 - DEBUG - Table setup completed
+2024-08-06 23:20:35,970 - DEBUG - Creating viewport
+2024-08-06 23:20:36,082 - DEBUG - Collections refreshed
+2024-08-06 23:20:36,082 - ERROR - Error setting up table: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:20:36,084 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:20:36,084 - ERROR - Error in setup_gui: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:20:36,084 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:20:36,085 - CRITICAL - Failed to initialize GUI: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:20:36,085 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:20:36,085 - ERROR - An error occurred while running the application
+Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 32, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:21:29,866 - INFO - Starting The Library application
+2024-08-06 23:21:29,866 - INFO - Initializing Controller
+2024-08-06 23:21:29,866 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 23:21:29,866 - INFO - Controller initialized successfully
+2024-08-06 23:21:29,866 - INFO - Initializing GUI
+2024-08-06 23:21:29,866 - DEBUG - Starting GUI setup
+2024-08-06 23:21:29,866 - DEBUG - DearPyGui context created
+2024-08-06 23:21:29,866 - DEBUG - Global theme applied
+2024-08-06 23:21:29,866 - DEBUG - Creating main window
+2024-08-06 23:21:29,866 - DEBUG - Table setup completed
+2024-08-06 23:21:29,866 - DEBUG - Creating viewport
+2024-08-06 23:21:29,975 - DEBUG - Collections refreshed
+2024-08-06 23:21:29,975 - ERROR - Error setting up table: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:21:29,977 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:21:29,977 - ERROR - Error in setup_gui: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:21:29,978 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:21:29,978 - CRITICAL - Failed to initialize GUI: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:21:29,978 - DEBUG - Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:21:29,979 - ERROR - An error occurred while running the application
+Exception: 
+Error:     [1011]
+Command:   add_*
+Item:      60 
+Label:     
+Item Type: mvAppItemType::mvTable
+Message:   Parent could not be deduced.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2476, in table
+    widget = internal_dpg.add_table(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, parent=parent, before=before, source=source, callback=callback, show=show, pos=pos, filter_key=filter_key, delay_search=delay_search, header_row=header_row, clipper=clipper, inner_width=inner_width, policy=policy, freeze_rows=freeze_rows, freeze_columns=freeze_columns, sort_multi=sort_multi, sort_tristate=sort_tristate, resizable=resizable, reorderable=reorderable, hideable=hideable, sortable=sortable, context_menu_in_body=context_menu_in_body, row_background=row_background, borders_innerH=borders_innerH, borders_outerH=borders_outerH, borders_innerV=borders_innerV, borders_outerV=borders_outerV, no_host_extendX=no_host_extendX, no_host_extendY=no_host_extendY, no_keep_columns_visible=no_keep_columns_visible, precise_widths=precise_widths, no_clip=no_clip, pad_outerX=pad_outerX, no_pad_outerX=no_pad_outerX, no_pad_innerX=no_pad_innerX, scrollX=scrollX, scrollY=scrollY, no_saved_settings=no_saved_settings, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_table> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.table(tag="items_table", header_row=True, resizable=True, policy=dpg.mvTable_SizingStretchProp):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2480, in table
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:23:53,367 - INFO - Starting The Library application
+2024-08-06 23:23:53,367 - INFO - Initializing Controller
+2024-08-06 23:23:53,367 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 23:23:53,367 - INFO - Controller initialized successfully
+2024-08-06 23:23:53,367 - INFO - Initializing GUI
+2024-08-06 23:23:53,367 - DEBUG - Starting GUI setup
+2024-08-06 23:23:53,367 - DEBUG - DearPyGui context created
+2024-08-06 23:23:53,368 - DEBUG - Global theme applied
+2024-08-06 23:23:53,368 - DEBUG - Creating main window
+2024-08-06 23:23:53,368 - DEBUG - Table setup completed
+2024-08-06 23:23:53,368 - DEBUG - Creating viewport
+2024-08-06 23:23:53,489 - DEBUG - Collections refreshed
+2024-08-06 23:23:53,489 - ERROR - Error setting up table: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:23:53,491 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:23:53,491 - ERROR - Error in setup_gui: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:23:53,492 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:23:53,492 - CRITICAL - Failed to initialize GUI: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:23:53,492 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:23:53,493 - ERROR - An error occurred while running the application
+Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:25:15,237 - INFO - Starting The Library application
+2024-08-06 23:25:15,237 - INFO - Initializing Controller
+2024-08-06 23:25:15,237 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 23:25:15,237 - INFO - Controller initialized successfully
+2024-08-06 23:25:15,237 - INFO - Initializing GUI
+2024-08-06 23:25:15,237 - DEBUG - Starting GUI setup
+2024-08-06 23:25:15,237 - DEBUG - DearPyGui context created
+2024-08-06 23:25:15,237 - DEBUG - Global theme applied
+2024-08-06 23:25:15,237 - DEBUG - Creating main window
+2024-08-06 23:25:15,237 - DEBUG - Table setup completed
+2024-08-06 23:25:15,238 - DEBUG - Creating viewport
+2024-08-06 23:25:15,350 - DEBUG - Collections refreshed
+2024-08-06 23:25:15,350 - ERROR - Error setting up table: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:25:15,351 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:25:15,352 - ERROR - Error in setup_gui: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:25:15,352 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:25:15,352 - CRITICAL - Failed to initialize GUI: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:25:15,353 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:25:15,353 - ERROR - An error occurred while running the application
+Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:27:38,694 - INFO - Starting The Library application
+2024-08-06 23:27:38,694 - INFO - Initializing Controller
+2024-08-06 23:27:38,694 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 23:27:38,694 - INFO - Controller initialized successfully
+2024-08-06 23:27:38,695 - INFO - Initializing GUI
+2024-08-06 23:27:38,695 - DEBUG - Starting GUI setup
+2024-08-06 23:27:38,695 - DEBUG - DearPyGui context created
+2024-08-06 23:27:38,695 - DEBUG - Global theme applied
+2024-08-06 23:27:38,695 - DEBUG - Creating main window
+2024-08-06 23:27:38,695 - DEBUG - Table setup completed
+2024-08-06 23:27:38,695 - DEBUG - Creating viewport
+2024-08-06 23:27:38,811 - DEBUG - Collections refreshed
+2024-08-06 23:27:38,811 - ERROR - Error setting up table: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:27:38,813 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:27:38,813 - ERROR - Error in setup_gui: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:27:38,813 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:27:38,813 - CRITICAL - Failed to initialize GUI: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:27:38,814 - DEBUG - Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-06 23:27:38,814 - ERROR - An error occurred while running the application
+Exception: 
+Error:     [1000]
+Command:   add alias
+Item:      0 
+Label:     Not found
+Item Type: Unknown
+Message:   Alias already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2841, in window
+    widget = internal_dpg.add_window(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, width=width, height=height, indent=indent, show=show, pos=pos, delay_search=delay_search, min_size=min_size, max_size=max_size, menubar=menubar, collapsed=collapsed, autosize=autosize, no_resize=no_resize, no_title_bar=no_title_bar, no_move=no_move, no_scrollbar=no_scrollbar, no_collapse=no_collapse, horizontal_scrollbar=horizontal_scrollbar, no_focus_on_appearing=no_focus_on_appearing, no_bring_to_front_on_focus=no_bring_to_front_on_focus, no_close=no_close, no_background=no_background, modal=modal, popup=popup, no_saved_settings=no_saved_settings, no_open_over_existing_popup=no_open_over_existing_popup, no_scroll_with_mouse=no_scroll_with_mouse, on_close=on_close, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_window> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 16, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 82, in setup_gui
+    self.setup_table()
+  File "/Users/griffinstrier/The_Library/gui.py", line 96, in setup_table
+    with dpg.window(tag="main_window"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-06 23:40:58,261 - INFO - Starting The Library application
+2024-08-06 23:40:58,261 - INFO - Initializing Controller
+2024-08-06 23:40:58,261 - INFO - CollectionManager initialized with max_collections=10
+2024-08-06 23:40:58,262 - INFO - Controller initialized successfully
+2024-08-06 23:40:58,262 - INFO - Initializing GUI
+2024-08-06 23:40:58,262 - DEBUG - Table setup completed
+2024-08-06 23:40:58,342 - DEBUG - Collections refreshed
+2024-08-06 23:40:58,343 - INFO - GUI setup completed successfully
+2024-08-06 23:40:58,343 - INFO - GUI initialized successfully
+2024-08-06 23:40:58,343 - INFO - Running GUI
+2024-08-06 23:41:07,287 - ERROR - Error adding item: All item fields must be filled
+2024-08-06 23:41:07,289 - DEBUG - Output updated: Error adding item: All item fields must be filled
+2024-08-06 23:41:08,904 - ERROR - Error adding collection: Collection name cannot be empty
+2024-08-06 23:41:08,905 - DEBUG - Output updated: Error adding collection: Collection name cannot be empty
+2024-08-06 23:41:16,721 - INFO - Attempting to add item '{'name': 'Dick', 'category': 'Bong', 'price': 1000.0}' to collection 'None'
+2024-08-06 23:41:16,722 - WARNING - Collection 'None' not found
+2024-08-06 23:41:16,723 - DEBUG - Output updated: Failed to add item '{'name': 'Dick', 'category': 'Bong', 'price': 1000.0}' to 'None'.
+2024-08-06 23:41:16,723 - WARNING - Collection 'None' not found
+2024-08-06 23:41:16,723 - DEBUG - Items refreshed for collection 'None'
+2024-08-06 23:41:16,724 - INFO - Item added: Dick to collection: None
+2024-08-06 23:41:27,188 - INFO - Attempting to add collection: Facts
+2024-08-06 23:41:27,189 - INFO - Collection 'Facts' added successfully
+2024-08-06 23:41:27,189 - DEBUG - Output updated: Collection 'Facts' added successfully.
+2024-08-06 23:41:27,190 - DEBUG - Collections refreshed
+2024-08-06 23:41:27,190 - INFO - Collection added: Facts
+2024-08-06 23:41:27,805 - DEBUG - Items refreshed for collection 'Facts'
+2024-08-06 23:41:27,806 - INFO - Collection 'Facts' selected
+2024-08-06 23:41:29,404 - INFO - Attempting to add item '{'name': 'Dick', 'category': 'Bong', 'price': 1000.0}' to collection 'Facts'
+2024-08-06 23:41:29,406 - INFO - Item '{'name': 'Dick', 'category': 'Bong', 'price': 1000.0}' added to collection 'Facts'
+2024-08-06 23:41:29,406 - DEBUG - Output updated: Item '{'name': 'Dick', 'category': 'Bong', 'price': 1000.0}' added to 'Facts' successfully.
+2024-08-06 23:41:29,407 - DEBUG - Items refreshed for collection 'Facts'
+2024-08-06 23:41:29,407 - INFO - Item added: Dick to collection: Facts
+2024-08-06 23:41:41,105 - INFO - Attempting to add item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' to collection 'Facts'
+2024-08-06 23:41:41,106 - INFO - Item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' added to collection 'Facts'
+2024-08-06 23:41:41,107 - DEBUG - Output updated: Item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' added to 'Facts' successfully.
+2024-08-06 23:41:41,107 - DEBUG - Items refreshed for collection 'Facts'
+2024-08-06 23:41:41,108 - INFO - Item added: Penis to collection: Facts
+2024-08-06 23:41:47,456 - DEBUG - Items refreshed for collection 'Facts'
+2024-08-06 23:41:47,457 - INFO - Collection 'Facts' selected
+2024-08-06 23:41:48,555 - INFO - Attempting to add collection: Facts
+2024-08-06 23:41:48,556 - WARNING - Collection 'Facts' already exists
+2024-08-06 23:41:48,556 - DEBUG - Output updated: Failed to add collection 'Facts'.
+2024-08-06 23:41:48,557 - DEBUG - Collections refreshed
+2024-08-06 23:41:48,557 - INFO - Collection added: Facts
+2024-08-06 23:41:55,855 - INFO - Attempting to add collection: Large Things
+2024-08-06 23:41:55,856 - INFO - Collection 'Large Things' added successfully
+2024-08-06 23:41:55,856 - DEBUG - Output updated: Collection 'Large Things' added successfully.
+2024-08-06 23:41:55,857 - DEBUG - Collections refreshed
+2024-08-06 23:41:55,857 - INFO - Collection added: Large Things
+2024-08-06 23:41:56,605 - DEBUG - Items refreshed for collection 'Large Things'
+2024-08-06 23:41:56,606 - INFO - Collection 'Large Things' selected
+2024-08-06 23:41:57,988 - INFO - Attempting to add item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' to collection 'Large Things'
+2024-08-06 23:41:57,989 - INFO - Item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' added to collection 'Large Things'
+2024-08-06 23:41:57,990 - DEBUG - Output updated: Item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' added to 'Large Things' successfully.
+2024-08-06 23:41:57,991 - DEBUG - Items refreshed for collection 'Large Things'
+2024-08-06 23:41:57,991 - INFO - Item added: Penis to collection: Large Things
+2024-08-06 23:41:58,855 - INFO - Attempting to add item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' to collection 'Large Things'
+2024-08-06 23:41:58,856 - WARNING - Item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' already exists in collection 'Large Things'
+2024-08-06 23:41:58,856 - DEBUG - Output updated: Failed to add item '{'name': 'Penis', 'category': 'Instrument', 'price': 20000.0}' to 'Large Things'.
+2024-08-06 23:41:58,857 - DEBUG - Items refreshed for collection 'Large Things'
+2024-08-06 23:41:58,857 - INFO - Item added: Penis to collection: Large Things
+2024-08-06 23:42:02,389 - DEBUG - Items refreshed for collection 'Large Things'
+2024-08-06 23:42:02,390 - INFO - Collection 'Large Things' selected
+2024-08-06 23:42:02,839 - DEBUG - Items refreshed for collection 'Facts'
+2024-08-06 23:42:02,840 - INFO - Collection 'Facts' selected
+2024-08-06 23:42:05,956 - DEBUG - Items refreshed for collection 'Large Things'
+2024-08-06 23:42:05,957 - INFO - Collection 'Large Things' selected
+2024-08-06 23:52:03,086 - INFO - Starting The Library application
+2024-08-06 23:52:03,086 - INFO - Initializing Controller
+2024-08-06 23:52:03,086 - INFO - Controller initialized successfully
+2024-08-06 23:52:03,086 - INFO - Initializing GUI
+2024-08-06 23:52:03,189 - INFO - GUI setup completed successfully
+2024-08-06 23:52:03,189 - INFO - GUI initialized successfully
+2024-08-06 23:52:03,189 - INFO - Running GUI
+2024-08-06 23:56:48,576 - INFO - GUI run completed
+2024-08-06 23:56:50,211 - INFO - GUI run completed
+2024-08-06 23:56:54,021 - INFO - Starting The Library application
+2024-08-06 23:56:54,021 - INFO - Initializing Controller
+2024-08-06 23:56:54,021 - INFO - Controller initialized successfully
+2024-08-06 23:56:54,021 - INFO - Initializing GUI
+2024-08-06 23:56:54,105 - INFO - GUI setup completed successfully
+2024-08-06 23:56:54,105 - INFO - GUI initialized successfully
+2024-08-06 23:56:54,105 - INFO - Running GUI
+2024-08-06 23:58:27,472 - INFO - GUI run completed
+2024-08-06 23:58:29,891 - INFO - Starting The Library application
+2024-08-06 23:58:29,891 - INFO - Initializing Controller
+2024-08-06 23:58:29,891 - INFO - Controller initialized successfully
+2024-08-06 23:58:29,891 - INFO - Initializing GUI
+2024-08-06 23:58:29,983 - INFO - GUI setup completed successfully
+2024-08-06 23:58:29,983 - INFO - GUI initialized successfully
+2024-08-06 23:58:29,983 - INFO - Running GUI
+2024-08-07 00:00:53,976 - INFO - Starting The Library application
+2024-08-07 00:00:53,976 - INFO - Initializing Controller
+2024-08-07 00:00:53,976 - INFO - Controller initialized successfully
+2024-08-07 00:00:53,976 - INFO - Initializing GUI
+2024-08-07 00:00:54,074 - INFO - GUI setup completed successfully
+2024-08-07 00:00:54,074 - INFO - GUI initialized successfully
+2024-08-07 00:00:54,074 - INFO - Running GUI
+2024-08-07 00:01:03,500 - INFO - GUI run completed
+2024-08-07 00:02:41,441 - INFO - Starting The Library application
+2024-08-07 00:02:41,441 - INFO - Initializing Controller
+2024-08-07 00:02:41,441 - INFO - Controller initialized successfully
+2024-08-07 00:02:41,441 - INFO - Initializing GUI
+2024-08-07 00:02:41,530 - INFO - GUI setup completed successfully
+2024-08-07 00:02:41,530 - INFO - GUI initialized successfully
+2024-08-07 00:02:41,530 - INFO - Running GUI
+2024-08-07 00:02:55,952 - INFO - GUI run completed
+2024-08-07 00:02:56,625 - INFO - Starting The Library application
+2024-08-07 00:02:56,625 - INFO - Initializing Controller
+2024-08-07 00:02:56,625 - INFO - Controller initialized successfully
+2024-08-07 00:02:56,625 - INFO - Initializing GUI
+2024-08-07 00:02:56,626 - ERROR - Error in setup_gui: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:02:56,626 - DEBUG - Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+
+2024-08-07 00:02:56,626 - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 18, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:02:58,524 - INFO - Starting The Library application
+2024-08-07 00:02:58,524 - INFO - Initializing Controller
+2024-08-07 00:02:58,524 - INFO - Controller initialized successfully
+2024-08-07 00:02:58,524 - INFO - Initializing GUI
+2024-08-07 00:02:58,525 - ERROR - Error in setup_gui: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:02:58,525 - DEBUG - Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+
+2024-08-07 00:02:58,525 - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 18, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:04:21,130 - INFO - Starting The Library application
+2024-08-07 00:04:21,131 - INFO - Initializing Controller
+2024-08-07 00:04:21,131 - INFO - Controller initialized successfully
+2024-08-07 00:04:21,131 - INFO - Initializing GUI
+2024-08-07 00:04:21,131 - ERROR - Error in setup_gui: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:04:21,131 - DEBUG - Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+
+2024-08-07 00:04:21,132 - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 18, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:05:34,476 - INFO - Starting The Library application
+2024-08-07 00:05:34,476 - INFO - Initializing Controller
+2024-08-07 00:05:34,476 - INFO - Controller initialized successfully
+2024-08-07 00:05:34,476 - INFO - Initializing GUI
+2024-08-07 00:05:34,477 - ERROR - Error in setup_gui: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:05:34,477 - DEBUG - Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+
+2024-08-07 00:05:34,477 - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 18, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:05:35,758 - INFO - Starting The Library application
+2024-08-07 00:05:35,759 - INFO - Initializing Controller
+2024-08-07 00:05:35,759 - INFO - Controller initialized successfully
+2024-08-07 00:05:35,759 - INFO - Initializing GUI
+2024-08-07 00:05:35,759 - ERROR - Error in setup_gui: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:05:35,759 - DEBUG - Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+
+2024-08-07 00:05:35,759 - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 18, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 26, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 80, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 141, in update_button_colors
+    if dpg.get_item_type(item) == dpg.mvAppItemType_Button and dpg.get_item_label(item) == button_label:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'mvAppItemType_Button'
+2024-08-07 00:06:29,432 - INFO - Starting The Library application
+2024-08-07 00:06:29,433 - INFO - Initializing Controller
+2024-08-07 00:06:29,433 - INFO - Controller initialized successfully
+2024-08-07 00:06:29,433 - INFO - Initializing GUI
+2024-08-07 00:06:29,433 - ERROR - Error in setup_gui: <built-in function configure_item> returned a result with an exception set
+2024-08-07 00:06:29,434 - DEBUG - Exception: Error: [1000] Message: 	color keyword does not exist.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 19, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 74, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 136, in update_button_colors
+    dpg.configure_item(item, color=color)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 80, in configure_item
+    internal_dpg.configure_item(item, **kwargs)
+SystemError: <built-in function configure_item> returned a result with an exception set
+
+2024-08-07 00:06:29,434 - ERROR - A critical error occurred while running the application
+Exception: Error: [1000] Message: 	color keyword does not exist.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 11, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 19, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 74, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 136, in update_button_colors
+    dpg.configure_item(item, color=color)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 80, in configure_item
+    internal_dpg.configure_item(item, **kwargs)
+SystemError: <built-in function configure_item> returned a result with an exception set
+2024-08-07 00:07:28,849 - INFO - Starting The Library application
+2024-08-07 00:07:28,849 - INFO - Initializing Controller
+2024-08-07 00:07:28,849 - INFO - Controller initialized successfully
+2024-08-07 00:07:28,849 - INFO - Initializing GUI
+2024-08-07 00:07:28,849 - ERROR - Error in setup_gui: <built-in function configure_item> returned a result with an exception set
+2024-08-07 00:07:28,851 - DEBUG - Exception: Error: [1000] Message: 	color keyword does not exist.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 19, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 74, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 136, in update_button_colors
+    dpg.configure_item(item, color=color)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 80, in configure_item
+    internal_dpg.configure_item(item, **kwargs)
+SystemError: <built-in function configure_item> returned a result with an exception set
+
+2024-08-07 00:07:28,851 - ERROR - A critical error occurred while running the application
+Exception: Error: [1000] Message: 	color keyword does not exist.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 11, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 19, in setup_gui
+    self.setup_landing_page()
+  File "/Users/griffinstrier/The_Library/gui.py", line 74, in setup_landing_page
+    self.update_button_colors((255, 255, 255) if self.dark_mode else (0, 0, 0))
+  File "/Users/griffinstrier/The_Library/gui.py", line 136, in update_button_colors
+    dpg.configure_item(item, color=color)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 80, in configure_item
+    internal_dpg.configure_item(item, **kwargs)
+SystemError: <built-in function configure_item> returned a result with an exception set
+2024-08-07 00:08:14,657 - INFO - Starting The Library application
+2024-08-07 00:08:14,657 - INFO - Initializing Controller
+2024-08-07 00:08:14,657 - INFO - Controller initialized successfully
+2024-08-07 00:08:14,657 - INFO - Initializing GUI
+2024-08-07 00:08:14,759 - INFO - GUI setup completed successfully
+2024-08-07 00:08:14,760 - INFO - GUI initialized successfully
+2024-08-07 00:08:14,760 - INFO - Running GUI
+2024-08-07 00:17:54,844 - INFO - Starting The Library application
+2024-08-07 00:17:54,844 - INFO - Initializing Controller
+2024-08-07 00:17:54,844 - INFO - Controller initialized successfully
+2024-08-07 00:17:54,844 - INFO - Initializing GUI
+2024-08-07 00:17:54,845 - ERROR - Error in setup_gui: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-07 00:17:54,846 - DEBUG - Exception: 
+Error:     [1003]
+Command:   add_menu_bar
+Item:      44 
+Label:     
+Item Type: mvAppItemType::mvMenuBar
+Message:   Incompatible parent. Acceptable parents include:	mvAppItemType::mvWindowAppItem
+mvAppItemType::mvChildWindow
+mvAppItemType::mvNodeEditor
+mvAppItemType::mvStage
+mvAppItemType::mvTemplateRegistry
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2843, in window
+    yield widget
+  File "/Users/griffinstrier/The_Library/gui.py", line 43, in setup_gui
+    self.setup_menu_bar()
+  File "/Users/griffinstrier/The_Library/gui.py", line 227, in setup_menu_bar
+    with dpg.menu_bar():
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2058, in menu_bar
+    widget = internal_dpg.add_menu_bar(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, indent=indent, parent=parent, show=show, delay_search=delay_search, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_menu_bar> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 38, in setup_gui
+    with dpg.window(tag="primary_window", label="The Library"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-07 00:17:54,846 - ERROR - A critical error occurred while running the application
+Exception: 
+Error:     [1003]
+Command:   add_menu_bar
+Item:      44 
+Label:     
+Item Type: mvAppItemType::mvMenuBar
+Message:   Incompatible parent. Acceptable parents include:	mvAppItemType::mvWindowAppItem
+mvAppItemType::mvChildWindow
+mvAppItemType::mvNodeEditor
+mvAppItemType::mvStage
+mvAppItemType::mvTemplateRegistry
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2843, in window
+    yield widget
+  File "/Users/griffinstrier/The_Library/gui.py", line 43, in setup_gui
+    self.setup_menu_bar()
+  File "/Users/griffinstrier/The_Library/gui.py", line 227, in setup_menu_bar
+    with dpg.menu_bar():
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2058, in menu_bar
+    widget = internal_dpg.add_menu_bar(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, indent=indent, parent=parent, show=show, delay_search=delay_search, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_menu_bar> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 28, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 38, in setup_gui
+    with dpg.window(tag="primary_window", label="The Library"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-07 00:18:55,992 - INFO - Starting The Library application
+2024-08-07 00:18:55,992 - INFO - Initializing Controller
+2024-08-07 00:18:55,992 - INFO - Controller initialized successfully
+2024-08-07 00:18:55,992 - INFO - Initializing GUI
+2024-08-07 00:18:55,993 - ERROR - Error in setup_gui: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-07 00:18:55,994 - DEBUG - Exception: 
+Error:     [1003]
+Command:   add_menu_bar
+Item:      44 
+Label:     
+Item Type: mvAppItemType::mvMenuBar
+Message:   Incompatible parent. Acceptable parents include:	mvAppItemType::mvWindowAppItem
+mvAppItemType::mvChildWindow
+mvAppItemType::mvNodeEditor
+mvAppItemType::mvStage
+mvAppItemType::mvTemplateRegistry
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2843, in window
+    yield widget
+  File "/Users/griffinstrier/The_Library/gui.py", line 43, in setup_gui
+    self.setup_menu_bar()
+  File "/Users/griffinstrier/The_Library/gui.py", line 227, in setup_menu_bar
+    with dpg.menu_bar():
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2058, in menu_bar
+    widget = internal_dpg.add_menu_bar(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, indent=indent, parent=parent, show=show, delay_search=delay_search, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_menu_bar> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 38, in setup_gui
+    with dpg.window(tag="primary_window", label="The Library"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+
+2024-08-07 00:18:55,994 - ERROR - A critical error occurred while running the application
+Exception: 
+Error:     [1003]
+Command:   add_menu_bar
+Item:      44 
+Label:     
+Item Type: mvAppItemType::mvMenuBar
+Message:   Incompatible parent. Acceptable parents include:	mvAppItemType::mvWindowAppItem
+mvAppItemType::mvChildWindow
+mvAppItemType::mvNodeEditor
+mvAppItemType::mvStage
+mvAppItemType::mvTemplateRegistry
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2843, in window
+    yield widget
+  File "/Users/griffinstrier/The_Library/gui.py", line 43, in setup_gui
+    self.setup_menu_bar()
+  File "/Users/griffinstrier/The_Library/gui.py", line 227, in setup_menu_bar
+    with dpg.menu_bar():
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2058, in menu_bar
+    widget = internal_dpg.add_menu_bar(label=label, user_data=user_data, use_internal_label=use_internal_label, tag=tag, indent=indent, parent=parent, show=show, delay_search=delay_search, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemError: <built-in function add_menu_bar> returned a result with an exception set
+
+During handling of the above exception, another exception occurred:
+
+Exception: Error: [1009] Message: 	No container to pop.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 28, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 38, in setup_gui
+    with dpg.window(tag="primary_window", label="The Library"):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dearpygui/dearpygui.py", line 2845, in window
+    internal_dpg.pop_container_stack()
+SystemError: <built-in function pop_container_stack> returned a result with an exception set
+2024-08-07 00:19:20,913 - INFO - Starting The Library application
+2024-08-07 00:19:20,913 - INFO - Initializing Controller
+2024-08-07 00:19:20,913 - INFO - Controller initialized successfully
+2024-08-07 00:19:20,913 - INFO - Initializing GUI
+2024-08-07 00:19:20,913 - ERROR - Error in setup_gui: 'GUI' object has no attribute 'show_about'
+2024-08-07 00:19:20,914 - DEBUG - Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 39, in setup_gui
+    self.setup_menu_bar()  # Add menu bar directly to the window
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 232, in setup_menu_bar
+    dpg.add_menu_item(label="About", callback=self.show_about)
+                                              ^^^^^^^^^^^^^^^
+AttributeError: 'GUI' object has no attribute 'show_about'
+
+2024-08-07 00:19:20,914 - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 33, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 28, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 39, in setup_gui
+    self.setup_menu_bar()  # Add menu bar directly to the window
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 232, in setup_menu_bar
+    dpg.add_menu_item(label="About", callback=self.show_about)
+                                              ^^^^^^^^^^^^^^^
+AttributeError: 'GUI' object has no attribute 'show_about'
+2024-08-07 00:21:07,417 - INFO - Starting The Library application
+2024-08-07 00:21:07,417 - INFO - Initializing Controller
+2024-08-07 00:21:07,417 - INFO - Controller initialized successfully
+2024-08-07 00:21:07,417 - INFO - Initializing GUI
+2024-08-07 00:21:07,418 - DEBUG - Table setup completed
+2024-08-07 00:21:07,514 - INFO - GUI setup completed successfully
+2024-08-07 00:21:07,514 - INFO - GUI initialized successfully
+2024-08-07 00:21:07,514 - INFO - Running GUI
+2024-08-07 00:26:05,792 - INFO - GUI run completed
+2024-08-07 00:31:25,335 - INFO - Starting The Library application
+2024-08-07 00:31:25,336 - INFO - Initializing Controller
+2024-08-07 00:31:25,336 - INFO - Controller initialized successfully
+2024-08-07 00:31:25,336 - INFO - Initializing GUI
+2024-08-07 00:31:25,336 - DEBUG - Table setup completed
+2024-08-07 00:31:25,431 - INFO - GUI setup completed successfully
+2024-08-07 00:31:25,431 - INFO - GUI initialized successfully
+2024-08-07 00:31:25,431 - INFO - Running GUI
+2024-08-07 00:31:30,572 - INFO - GUI run completed
+2024-08-07 00:32:02,168 - INFO - Starting The Library application
+2024-08-07 00:32:02,168 - INFO - Initializing Controller
+2024-08-07 00:32:02,168 - INFO - Controller initialized successfully
+2024-08-07 00:32:02,168 - INFO - Initializing GUI
+2024-08-07 00:32:02,169 - DEBUG - Table setup completed
+2024-08-07 00:32:02,243 - INFO - GUI setup completed successfully
+2024-08-07 00:32:02,243 - INFO - GUI initialized successfully
+2024-08-07 00:32:02,243 - INFO - Running GUI
+2024-08-07 00:34:00,748 - INFO - Starting The Library application
+2024-08-07 00:34:00,748 - INFO - Initializing Controller
+2024-08-07 00:34:00,748 - INFO - Controller initialized successfully
+2024-08-07 00:34:00,748 - INFO - Initializing GUI
+2024-08-07 00:34:00,749 - DEBUG - Table setup completed
+2024-08-07 00:34:00,834 - INFO - GUI setup completed successfully
+2024-08-07 00:34:00,834 - INFO - GUI initialized successfully
+2024-08-07 00:34:00,834 - INFO - Running GUI
+2024-08-07 00:34:12,917 - INFO - GUI run completed
+2024-08-07 00:34:13,975 - __main__ - INFO - Starting The Library application
+2024-08-07 00:34:13,975 - __main__ - INFO - Initializing Controller
+2024-08-07 00:34:13,975 - __main__ - INFO - Controller initialized successfully
+2024-08-07 00:34:13,975 - __main__ - INFO - Initializing GUI
+2024-08-07 00:34:13,975 - TheLibrary - DEBUG - Table setup completed
+2024-08-07 00:34:13,976 - TheLibrary - ERROR - Error in setup_gui: module 'dearpygui.dearpygui' has no attribute 'get_primary_monitor_width'
+2024-08-07 00:34:13,976 - TheLibrary - DEBUG - Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/gui.py", line 47, in setup_gui
+    screen_width = dpg.get_primary_monitor_width()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'get_primary_monitor_width'
+
+2024-08-07 00:34:13,976 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 35, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 19, in __init__
+    self.setup_gui()
+  File "/Users/griffinstrier/The_Library/gui.py", line 47, in setup_gui
+    screen_width = dpg.get_primary_monitor_width()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'dearpygui.dearpygui' has no attribute 'get_primary_monitor_width'
+2024-08-07 00:34:13,976 - __main__ - INFO - Cleaning up resources
+2024-08-07 00:34:13,977 - __main__ - INFO - DearPyGui context destroyed
+2024-08-07 01:01:05,090 - __main__ - INFO - Starting The Library application
+2024-08-07 01:01:05,090 - __main__ - INFO - Initializing Controller
+2024-08-07 01:01:05,090 - __main__ - INFO - Controller initialized successfully
+2024-08-07 01:01:05,090 - __main__ - INFO - Initializing GUI
+2024-08-07 01:01:05,090 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 35, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 19, in __init__
+    self.dark_mode = self.controller.load_theme_preference()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Controller' object has no attribute 'load_theme_preference'
+2024-08-07 01:01:05,091 - __main__ - INFO - Cleaning up resources
+2024-08-07 01:01:05,091 - __main__ - INFO - DearPyGui context destroyed
+2024-08-07 01:04:55,736 - INFO - GUI run completed
+2024-08-07 01:05:01,321 - __main__ - INFO - Starting The Library application
+2024-08-07 01:05:01,321 - __main__ - INFO - Initializing Controller
+2024-08-07 01:05:01,321 - TheLibrary - INFO - DataManager initialized
+2024-08-07 01:05:01,321 - TheLibrary - DEBUG - Function '__init__' executed in 0.0001 seconds
+2024-08-07 01:05:01,321 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 01:05:01,321 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 01:05:01,321 - __main__ - INFO - Controller initialized successfully
+2024-08-07 01:05:01,321 - __main__ - INFO - Initializing GUI
+2024-08-07 01:05:01,321 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 01:05:01,321 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 01:05:01,321 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 01:05:01,592 - TheLibrary - DEBUG - Menu setup completed
+2024-08-07 01:05:01,592 - TheLibrary - DEBUG - Function 'setup_menu' executed in 0.1531 seconds
+2024-08-07 01:05:01,592 - TheLibrary - DEBUG - Main frame setup completed
+2024-08-07 01:05:01,594 - TheLibrary - DEBUG - Landing page setup completed
+2024-08-07 01:05:01,608 - TheLibrary - DEBUG - Collections section setup completed
+2024-08-07 01:05:01,609 - TheLibrary - INFO - Retrieved 4 categories
+2024-08-07 01:05:01,609 - TheLibrary - DEBUG - Function 'get_categories' executed in 0.0001 seconds
+2024-08-07 01:05:01,609 - TheLibrary - INFO - Retrieved 4 categories
+2024-08-07 01:05:01,609 - TheLibrary - DEBUG - Function 'get_categories' executed in 0.0002 seconds
+2024-08-07 01:05:01,610 - TheLibrary - DEBUG - Items section setup completed
+2024-08-07 01:05:01,611 - TheLibrary - DEBUG - Search bar setup completed
+2024-08-07 01:05:01,612 - TheLibrary - DEBUG - Table setup completed
+2024-08-07 01:05:01,613 - TheLibrary - DEBUG - Collections page setup completed
+2024-08-07 01:05:01,614 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-07 01:05:01,614 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-07 01:05:01,614 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2925 seconds
+2024-08-07 01:05:01,614 - TheLibrary - INFO - GUI initialized successfully
+2024-08-07 01:05:01,614 - TheLibrary - DEBUG - Function '__init__' executed in 0.2928 seconds
+2024-08-07 01:05:01,614 - __main__ - INFO - GUI initialized successfully
+2024-08-07 01:05:01,614 - __main__ - INFO - Running GUI
+2024-08-07 01:05:05,806 - TheLibrary - ERROR - Error getting items from collection: Collection 'CTkOptionMenu' not found
+2024-08-07 01:05:05,806 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0004 seconds
+2024-08-07 01:05:05,806 - TheLibrary - INFO - Retrieved 0 items from collection 'CTkOptionMenu'
+2024-08-07 01:05:05,807 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0008 seconds
+2024-08-07 01:05:05,807 - TheLibrary - DEBUG - Items refreshed for collection 'CTkOptionMenu'
+2024-08-07 01:05:05,807 - TheLibrary - INFO - Collection 'CTkOptionMenu' selected
+2024-08-07 01:05:11,693 - TheLibrary - ERROR - Error adding collection: Collection name cannot be empty
+2024-08-07 01:05:11,696 - TheLibrary - DEBUG - Output updated: Error adding collection: Collection name cannot be empty
+2024-08-07 01:05:15,811 - TheLibrary - DEBUG - File menu displayed
+2024-08-07 01:05:15,812 - TheLibrary - DEBUG - Function 'show_file_menu' executed in 0.0021 seconds
+2024-08-07 01:05:20,616 - TheLibrary - DEBUG - Help menu displayed
+2024-08-07 01:05:20,616 - TheLibrary - DEBUG - Function 'show_help_menu' executed in 0.0021 seconds
+2024-08-07 01:05:23,158 - TheLibrary - DEBUG - Help menu displayed
+2024-08-07 01:05:23,158 - TheLibrary - DEBUG - Function 'show_help_menu' executed in 0.0024 seconds
+2024-08-07 01:05:29,835 - TheLibrary - INFO - Theme preference saved: Dark mode = 0
+2024-08-07 01:05:29,835 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0007 seconds
+2024-08-07 01:05:29,835 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0008 seconds
+2024-08-07 01:05:29,835 - TheLibrary - INFO - Theme changed to light
+2024-08-07 01:05:29,835 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0043 seconds
+2024-08-07 01:05:32,192 - TheLibrary - DEBUG - File menu displayed
+2024-08-07 01:05:32,193 - TheLibrary - DEBUG - Function 'show_file_menu' executed in 0.0033 seconds
+2024-08-07 01:07:20,143 - __main__ - INFO - Starting The Library application
+2024-08-07 01:07:20,143 - __main__ - INFO - Initializing Controller
+2024-08-07 01:07:20,143 - TheLibrary - INFO - DataManager initialized
+2024-08-07 01:07:20,143 - TheLibrary - DEBUG - Function '__init__' executed in 0.0001 seconds
+2024-08-07 01:07:20,143 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 01:07:20,143 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 01:07:20,143 - __main__ - INFO - Controller initialized successfully
+2024-08-07 01:07:20,143 - __main__ - INFO - Initializing GUI
+2024-08-07 01:07:20,143 - TheLibrary - INFO - Theme preference loaded: Dark mode = 0
+2024-08-07 01:07:20,143 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 01:07:20,143 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 01:07:20,342 - TheLibrary - DEBUG - Menu setup completed
+2024-08-07 01:07:20,343 - TheLibrary - DEBUG - Function 'setup_menu' executed in 0.1104 seconds
+2024-08-07 01:07:20,343 - TheLibrary - DEBUG - Main frame setup completed
+2024-08-07 01:07:20,345 - TheLibrary - DEBUG - Landing page setup completed
+2024-08-07 01:07:20,358 - TheLibrary - DEBUG - Collections section setup completed
+2024-08-07 01:07:20,359 - TheLibrary - INFO - Retrieved 4 categories
+2024-08-07 01:07:20,359 - TheLibrary - DEBUG - Function 'get_categories' executed in 0.0001 seconds
+2024-08-07 01:07:20,359 - TheLibrary - INFO - Retrieved 4 categories
+2024-08-07 01:07:20,359 - TheLibrary - DEBUG - Function 'get_categories' executed in 0.0002 seconds
+2024-08-07 01:07:20,361 - TheLibrary - DEBUG - Items section setup completed
+2024-08-07 01:07:20,361 - TheLibrary - DEBUG - Search bar setup completed
+2024-08-07 01:07:20,363 - TheLibrary - DEBUG - Table setup completed
+2024-08-07 01:07:20,363 - TheLibrary - DEBUG - Collections page setup completed
+2024-08-07 01:07:20,364 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-07 01:07:20,364 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-07 01:07:20,364 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2209 seconds
+2024-08-07 01:07:20,364 - TheLibrary - INFO - GUI initialized successfully
+2024-08-07 01:07:20,364 - TheLibrary - DEBUG - Function '__init__' executed in 0.2212 seconds
+2024-08-07 01:07:20,365 - __main__ - INFO - GUI initialized successfully
+2024-08-07 01:07:20,365 - __main__ - INFO - Running GUI
+2024-08-07 01:07:21,785 - TheLibrary - DEBUG - File menu displayed
+2024-08-07 01:07:21,785 - TheLibrary - DEBUG - Function 'show_file_menu' executed in 0.0037 seconds
+2024-08-07 01:07:25,584 - TheLibrary - DEBUG - File menu displayed
+2024-08-07 01:07:25,585 - TheLibrary - DEBUG - Function 'show_file_menu' executed in 0.0041 seconds
+2024-08-07 01:07:33,147 - TheLibrary - INFO - Theme preference saved: Dark mode = 1
+2024-08-07 01:07:33,147 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0016 seconds
+2024-08-07 01:07:33,147 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0019 seconds
+2024-08-07 01:07:33,148 - TheLibrary - INFO - Theme changed to dark
+2024-08-07 01:07:33,148 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0105 seconds
+2024-08-07 01:07:41,280 - TheLibrary - ERROR - Error getting items from collection: Collection 'CTkOptionMenu' not found
+2024-08-07 01:07:41,281 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0010 seconds
+2024-08-07 01:07:41,281 - TheLibrary - INFO - Retrieved 0 items from collection 'CTkOptionMenu'
+2024-08-07 01:07:41,282 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0020 seconds
+2024-08-07 01:07:41,283 - TheLibrary - DEBUG - Items refreshed for collection 'CTkOptionMenu'
+2024-08-07 01:07:41,283 - TheLibrary - INFO - Collection 'CTkOptionMenu' selected
+2024-08-07 01:07:47,214 - TheLibrary - DEBUG - File menu displayed
+2024-08-07 01:07:47,215 - TheLibrary - DEBUG - Function 'show_file_menu' executed in 0.0032 seconds
+2024-08-07 01:09:42,507 - TheLibrary - DEBUG - File menu displayed
+2024-08-07 01:09:42,507 - TheLibrary - DEBUG - Function 'show_file_menu' executed in 0.0023 seconds
+2024-08-07 01:23:35,965 - __main__ - INFO - Starting The Library application
+2024-08-07 01:23:35,965 - __main__ - INFO - Initializing Controller
+2024-08-07 01:23:35,965 - TheLibrary - INFO - DataManager initialized
+2024-08-07 01:23:35,965 - TheLibrary - DEBUG - Function '__init__' executed in 0.0001 seconds
+2024-08-07 01:23:35,965 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 01:23:35,965 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 01:23:35,965 - __main__ - INFO - Controller initialized successfully
+2024-08-07 01:23:35,965 - __main__ - INFO - Initializing GUI
+2024-08-07 01:23:35,965 - TheLibrary - INFO - Theme preference loaded: Dark mode = 1
+2024-08-07 01:23:35,965 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 01:23:35,965 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 01:23:36,189 - TheLibrary - DEBUG - Menu setup completed
+2024-08-07 01:23:36,189 - TheLibrary - DEBUG - Function 'setup_menu' executed in 0.1245 seconds
+2024-08-07 01:23:36,190 - TheLibrary - DEBUG - Main frame setup completed
+2024-08-07 01:23:36,192 - TheLibrary - DEBUG - Landing page setup completed
+2024-08-07 01:23:36,210 - TheLibrary - DEBUG - Collections section setup completed
+2024-08-07 01:23:36,211 - TheLibrary - INFO - Retrieved 4 categories
+2024-08-07 01:23:36,211 - TheLibrary - DEBUG - Function 'get_categories' executed in 0.0001 seconds
+2024-08-07 01:23:36,211 - TheLibrary - INFO - Retrieved 4 categories
+2024-08-07 01:23:36,211 - TheLibrary - DEBUG - Function 'get_categories' executed in 0.0002 seconds
+2024-08-07 01:23:36,213 - TheLibrary - DEBUG - Items section setup completed
+2024-08-07 01:23:36,213 - TheLibrary - DEBUG - Search bar setup completed
+2024-08-07 01:23:36,215 - TheLibrary - DEBUG - Table setup completed
+2024-08-07 01:23:36,215 - TheLibrary - DEBUG - Collections page setup completed
+2024-08-07 01:23:36,216 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-07 01:23:36,216 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-07 01:23:36,216 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2508 seconds
+2024-08-07 01:23:36,216 - TheLibrary - INFO - GUI initialized successfully
+2024-08-07 01:23:36,217 - TheLibrary - DEBUG - Function '__init__' executed in 0.2512 seconds
+2024-08-07 01:23:36,217 - __main__ - INFO - GUI initialized successfully
+2024-08-07 01:23:36,217 - __main__ - INFO - Running GUI
+2024-08-07 01:23:57,888 - TheLibrary - INFO - Attempting to add collection: Dick-like Objects
+2024-08-07 01:23:57,888 - TheLibrary - INFO - Collection 'Dick-like Objects' added successfully
+2024-08-07 01:23:57,889 - TheLibrary - DEBUG - Function 'add_collection' executed in 0.0003 seconds
+2024-08-07 01:23:57,889 - TheLibrary - DEBUG - Function 'add_collection' executed in 0.0013 seconds
+2024-08-07 01:23:57,891 - TheLibrary - DEBUG - Output updated: Collection 'Dick-like Objects' added successfully.
+2024-08-07 01:23:57,891 - TheLibrary - INFO - Retrieved 1 collections
+2024-08-07 01:23:57,892 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0002 seconds
+2024-08-07 01:23:57,892 - TheLibrary - INFO - Retrieved 1 collections
+2024-08-07 01:23:57,892 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0006 seconds
+2024-08-07 01:23:57,892 - TheLibrary - DEBUG - Collections refreshed
+2024-08-07 01:23:57,893 - TheLibrary - INFO - Collection added: Dick-like Objects
+2024-08-07 01:24:05,888 - TheLibrary - INFO - Theme preference saved: Dark mode = 0
+2024-08-07 01:24:05,889 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0008 seconds
+2024-08-07 01:24:05,889 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0010 seconds
+2024-08-07 01:24:05,889 - TheLibrary - INFO - Theme changed to light
+2024-08-07 01:24:05,889 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0074 seconds
+2024-08-07 12:38:48,029 - __main__ - INFO - Starting The Library application
+2024-08-07 12:38:48,029 - __main__ - INFO - Initializing Controller
+2024-08-07 12:38:48,029 - TheLibrary - INFO - DataManager initialized
+2024-08-07 12:38:48,029 - TheLibrary - DEBUG - Function '__init__' executed in 0.0001 seconds
+2024-08-07 12:38:48,029 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 12:38:48,029 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 12:38:48,029 - __main__ - INFO - Controller initialized successfully
+2024-08-07 12:38:48,029 - __main__ - INFO - Initializing GUI
+2024-08-07 12:38:48,029 - TheLibrary - INFO - Theme preference loaded: Dark mode = 0
+2024-08-07 12:38:48,029 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 12:38:48,029 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 12:38:48,234 - TheLibrary - DEBUG - Menu setup completed
+2024-08-07 12:38:48,235 - TheLibrary - DEBUG - Function 'setup_menu' executed in 0.1125 seconds
+2024-08-07 12:38:48,235 - TheLibrary - DEBUG - Main frame setup completed
+2024-08-07 12:38:48,237 - TheLibrary - DEBUG - Landing page setup completed
+2024-08-07 12:38:48,254 - TheLibrary - DEBUG - Collections section setup completed
+2024-08-07 12:38:48,255 - TheLibrary - INFO - Retrieved 4 categories
+2024-08-07 12:38:48,255 - TheLibrary - DEBUG - Function 'get_categories' executed in 0.0001 seconds
+2024-08-07 12:38:48,255 - TheLibrary - INFO - Retrieved 4 categories
+2024-08-07 12:38:48,255 - TheLibrary - DEBUG - Function 'get_categories' executed in 0.0002 seconds
+2024-08-07 12:38:48,257 - TheLibrary - DEBUG - Items section setup completed
+2024-08-07 12:38:48,257 - TheLibrary - DEBUG - Search bar setup completed
+2024-08-07 12:38:48,259 - TheLibrary - DEBUG - Table setup completed
+2024-08-07 12:38:48,259 - TheLibrary - DEBUG - Collections page setup completed
+2024-08-07 12:38:48,260 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-07 12:38:48,260 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-07 12:38:48,260 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2312 seconds
+2024-08-07 12:38:48,260 - TheLibrary - INFO - GUI initialized successfully
+2024-08-07 12:38:48,261 - TheLibrary - DEBUG - Function '__init__' executed in 0.2316 seconds
+2024-08-07 12:38:48,261 - __main__ - INFO - GUI initialized successfully
+2024-08-07 12:38:48,261 - __main__ - INFO - Running GUI
+2024-08-07 12:38:58,344 - TheLibrary - INFO - Theme preference saved: Dark mode = 1
+2024-08-07 12:38:58,344 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0014 seconds
+2024-08-07 12:38:58,345 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0017 seconds
+2024-08-07 12:38:58,345 - TheLibrary - INFO - Theme changed to dark
+2024-08-07 12:38:58,345 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0071 seconds
+2024-08-07 12:39:01,080 - TheLibrary - INFO - Theme preference saved: Dark mode = 0
+2024-08-07 12:39:01,080 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0016 seconds
+2024-08-07 12:39:01,081 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0019 seconds
+2024-08-07 12:39:01,081 - TheLibrary - INFO - Theme changed to light
+2024-08-07 12:39:01,081 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0091 seconds
+2024-08-07 12:39:09,526 - TheLibrary - INFO - Attempting to add collection: Shoes
+2024-08-07 12:39:09,526 - TheLibrary - INFO - Collection 'Shoes' added successfully
+2024-08-07 12:39:09,526 - TheLibrary - DEBUG - Function 'add_collection' executed in 0.0002 seconds
+2024-08-07 12:39:09,526 - TheLibrary - DEBUG - Function 'add_collection' executed in 0.0007 seconds
+2024-08-07 12:39:09,528 - TheLibrary - DEBUG - Output updated: Collection 'Shoes' added successfully.
+2024-08-07 12:39:09,528 - TheLibrary - INFO - Retrieved 1 collections
+2024-08-07 12:39:09,528 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-07 12:39:09,528 - TheLibrary - INFO - Retrieved 1 collections
+2024-08-07 12:39:09,528 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0003 seconds
+2024-08-07 12:39:09,528 - TheLibrary - DEBUG - Collections refreshed
+2024-08-07 12:39:09,528 - TheLibrary - INFO - Collection added: Shoes
+2024-08-07 12:39:22,359 - TheLibrary - INFO - Attempting to add item to collection 'None'
+2024-08-07 12:39:22,360 - TheLibrary - ERROR - Error adding item: Collection 'None' not found
+2024-08-07 12:39:22,360 - TheLibrary - DEBUG - Function 'add_item' executed in 0.0001 seconds
+2024-08-07 12:39:22,360 - TheLibrary - DEBUG - Function 'add_item' executed in 0.0006 seconds
+2024-08-07 12:39:22,361 - TheLibrary - DEBUG - Output updated: Failed to add item 'Jordan' to 'None'.
+2024-08-07 12:39:22,361 - TheLibrary - ERROR - Error getting items from collection: Collection 'None' not found
+2024-08-07 12:39:22,361 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0001 seconds
+2024-08-07 12:39:22,361 - TheLibrary - INFO - Retrieved 0 items from collection 'None'
+2024-08-07 12:39:22,361 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0003 seconds
+2024-08-07 12:39:22,362 - TheLibrary - DEBUG - Items refreshed for collection 'None'
+2024-08-07 12:39:22,362 - TheLibrary - INFO - Item added: Jordan to collection: None
+2024-08-07 12:39:30,043 - TheLibrary - DEBUG - File menu displayed
+2024-08-07 12:39:30,044 - TheLibrary - DEBUG - Function 'show_file_menu' executed in 0.0018 seconds
+2024-08-07 12:39:34,987 - TheLibrary - INFO - GUI main loop started
+2024-08-07 12:39:34,988 - TheLibrary - DEBUG - Function 'run' executed in 46.7269 seconds
+2024-08-07 12:39:34,988 - __main__ - INFO - GUI run completed
+2024-08-07 12:39:34,988 - __main__ - INFO - Cleaning up resources
+2024-08-07 12:39:34,988 - __main__ - ERROR - Error destroying DearPyGui context: name 'dpg' is not defined
+2024-08-07 13:15:55,108 - __main__ - INFO - Starting The Library application
+2024-08-07 13:15:55,108 - __main__ - INFO - Initializing Controller
+2024-08-07 13:15:55,108 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 13:15:55,108 - TheLibrary - DEBUG - Function '__init__' executed in 0.0001 seconds
+2024-08-07 13:15:55,108 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 13:15:55,108 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 13:15:55,108 - __main__ - INFO - Controller initialized successfully
+2024-08-07 13:15:55,108 - __main__ - INFO - Initializing GUI
+2024-08-07 13:15:55,108 - TheLibrary - INFO - Theme preference loaded: Dark mode = 0
+2024-08-07 13:15:55,108 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 13:15:55,108 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 13:15:55,229 - TheLibrary - ERROR - Error loading icon house.png: [Errno 2] No such file or directory: '/Users/griffinstrier/The_Library/assets/icons/house.png'
+2024-08-07 13:15:55,356 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2024-08-07 13:15:55,356 - PIL.PngImagePlugin - DEBUG - STREAM b'bKGD' 41 6
+2024-08-07 13:15:55,356 - PIL.PngImagePlugin - DEBUG - b'bKGD' 41 6 (unknown)
+2024-08-07 13:15:55,356 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 59 290
+2024-08-07 13:15:55,367 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2024-08-07 13:15:55,367 - PIL.PngImagePlugin - DEBUG - STREAM b'bKGD' 41 6
+2024-08-07 13:15:55,367 - PIL.PngImagePlugin - DEBUG - b'bKGD' 41 6 (unknown)
+2024-08-07 13:15:55,367 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 59 799
+2024-08-07 13:15:55,369 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2024-08-07 13:15:55,369 - PIL.PngImagePlugin - DEBUG - STREAM b'bKGD' 41 6
+2024-08-07 13:15:55,369 - PIL.PngImagePlugin - DEBUG - b'bKGD' 41 6 (unknown)
+2024-08-07 13:15:55,369 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 59 1564
+2024-08-07 13:15:55,370 - TheLibrary - DEBUG - Sidebar setup completed
+2024-08-07 13:15:55,370 - TheLibrary - DEBUG - Function 'setup_sidebar' executed in 0.1456 seconds
+2024-08-07 13:15:55,371 - TheLibrary - INFO - Retrieved 0 collections
+2024-08-07 13:15:55,371 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-07 13:15:55,371 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-07 13:15:55,389 - TheLibrary - DEBUG - Main content setup completed
+2024-08-07 13:15:55,389 - TheLibrary - DEBUG - Function 'setup_main_content' executed in 0.0190 seconds
+2024-08-07 13:15:55,390 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-07 13:15:55,390 - TheLibrary - DEBUG - Function 'setup_settings_window' executed in 0.0013 seconds
+2024-08-07 13:15:55,391 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-07 13:15:55,391 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2822 seconds
+2024-08-07 13:15:55,391 - TheLibrary - DEBUG - Function '__init__' executed in 0.2825 seconds
+2024-08-07 13:15:55,391 - __main__ - INFO - GUI initialized successfully
+2024-08-07 13:15:55,391 - __main__ - INFO - Running GUI
+2024-08-07 13:16:04,319 - TheLibrary - INFO - Theme preference saved: Dark mode = 1
+2024-08-07 13:16:04,320 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0010 seconds
+2024-08-07 13:16:04,320 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0012 seconds
+2024-08-07 13:16:04,320 - TheLibrary - INFO - Theme changed to dark
+2024-08-07 13:16:04,320 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0050 seconds
+2024-08-07 13:16:08,738 - TheLibrary - INFO - Attempting to add collection: Shoes
+2024-08-07 13:16:08,739 - TheLibrary - INFO - Collection 'Shoes' added successfully
+2024-08-07 13:16:08,739 - TheLibrary - DEBUG - Function 'add_collection' executed in 0.0002 seconds
+2024-08-07 13:16:08,739 - TheLibrary - DEBUG - Function 'add_collection' executed in 0.0007 seconds
+2024-08-07 13:16:08,739 - TheLibrary - INFO - Collection 'Shoes' added successfully.
+2024-08-07 13:16:08,741 - TheLibrary - INFO - Retrieved 1 collections
+2024-08-07 13:16:08,741 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0002 seconds
+2024-08-07 13:16:08,741 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0003 seconds
+2024-08-07 13:16:08,742 - TheLibrary - DEBUG - Function 'add_new_collection' executed in 2.3864 seconds
+2024-08-07 13:16:36,278 - TheLibrary - INFO - Retrieved 0 items from collection 'Shoes'
+2024-08-07 13:16:36,279 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0009 seconds
+2024-08-07 13:16:36,280 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0013 seconds
+2024-08-07 13:16:36,281 - TheLibrary - DEBUG - Function 'show_collection_items' executed in 0.0049 seconds
+2024-08-07 13:16:37,022 - TheLibrary - DEBUG - Function 'add_new_item' executed in 0.0046 seconds
+2024-08-07 13:16:45,077 - TheLibrary - INFO - Attempting to add item to collection 'Shoes'
+2024-08-07 13:16:45,078 - TheLibrary - INFO - Item '{'name': 'jordan', 'category': 'shoe', 'price': 100.0}' added to collection 'Shoes'
+2024-08-07 13:16:45,078 - TheLibrary - DEBUG - Function 'add_item' executed in 0.0001 seconds
+2024-08-07 13:16:45,078 - TheLibrary - DEBUG - Function 'add_item' executed in 0.0005 seconds
+2024-08-07 13:16:45,078 - TheLibrary - INFO - Item 'jordan' added to 'Shoes' successfully.
+2024-08-07 13:16:45,079 - TheLibrary - INFO - Retrieved 1 items from collection 'Shoes'
+2024-08-07 13:16:45,079 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0001 seconds
+2024-08-07 13:16:45,079 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0002 seconds
+2024-08-07 13:16:45,081 - TheLibrary - DEBUG - Function 'show_collection_items' executed in 0.0028 seconds
+2024-08-07 17:22:55,279 - __main__ - INFO - Starting The Library application
+2024-08-07 17:22:55,279 - __main__ - INFO - Initializing Controller
+2024-08-07 17:22:55,279 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:22:55,279 - TheLibrary - DEBUG - Function '__init__' executed in 0.0001 seconds
+2024-08-07 17:22:55,279 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:22:55,279 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 17:22:55,279 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:22:55,279 - __main__ - INFO - Initializing GUI
+2024-08-07 17:22:55,280 - TheLibrary - INFO - Theme preference loaded: Dark mode = 1
+2024-08-07 17:22:55,280 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:22:55,280 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:22:55,280 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "/Users/griffinstrier/The_Library/main.py", line 74, in main
+    gui = GUI(controller)
+          ^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/logger.py", line 133, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/griffinstrier/The_Library/gui.py", line 22, in __init__
+    self.settings_file = os.path.join(get_user_data_dir(), "settings.json")
+                                      ^^^^^^^^^^^^^^^^^
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:22:55,282 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:22:55,282 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:29:06,536 - __main__ - INFO - Starting The Library application
+2024-08-07 17:29:06,536 - __main__ - INFO - Initializing Controller
+2024-08-07 17:29:06,536 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:29:06,537 - TheLibrary - DEBUG - Function '__init__' executed in 0.0003 seconds
+2024-08-07 17:29:06,537 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:29:06,537 - TheLibrary - DEBUG - Function '__init__' executed in 0.0007 seconds
+2024-08-07 17:29:06,537 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:29:06,537 - __main__ - INFO - Initializing GUI
+2024-08-07 17:29:06,537 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:29:06,537 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0002 seconds
+2024-08-07 17:29:06,537 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0004 seconds
+2024-08-07 17:29:06,538 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:29:06,543 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:29:06,543 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:29:26,296 - TheLibrary - INFO - Retrieved 1 items from collection 'Shoes'
+2024-08-07 17:29:26,296 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0004 seconds
+2024-08-07 17:29:26,297 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0006 seconds
+2024-08-07 17:29:26,299 - TheLibrary - DEBUG - Function 'show_collection_items' executed in 0.0052 seconds
+2024-08-07 17:30:01,433 - TheLibrary - INFO - Retrieved 1 items from collection 'Shoes'
+2024-08-07 17:30:01,433 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0004 seconds
+2024-08-07 17:30:01,433 - TheLibrary - DEBUG - Function 'get_items_in_collection' executed in 0.0005 seconds
+2024-08-07 17:30:01,436 - TheLibrary - DEBUG - Function 'show_collection_items' executed in 0.0046 seconds
+2024-08-07 17:30:44,180 - __main__ - INFO - Starting The Library application
+2024-08-07 17:30:44,180 - __main__ - INFO - Initializing Controller
+2024-08-07 17:30:44,181 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:30:44,181 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 17:30:44,181 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:30:44,181 - TheLibrary - DEBUG - Function '__init__' executed in 0.0004 seconds
+2024-08-07 17:30:44,181 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:30:44,181 - __main__ - INFO - Initializing GUI
+2024-08-07 17:30:44,181 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:30:44,181 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:30:44,181 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-08-07 17:30:44,181 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:30:44,186 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:30:44,186 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:34:38,278 - __main__ - INFO - Starting The Library application
+2024-08-07 17:34:38,278 - __main__ - INFO - Initializing Controller
+2024-08-07 17:34:38,278 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:34:38,279 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 17:34:38,279 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:34:38,279 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-08-07 17:34:38,279 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:34:38,279 - __main__ - INFO - Initializing GUI
+2024-08-07 17:34:38,279 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:34:38,279 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:34:38,279 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-08-07 17:34:38,279 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:34:38,284 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:34:38,284 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:38:21,743 - __main__ - INFO - Starting The Library application
+2024-08-07 17:38:21,744 - __main__ - INFO - Initializing Controller
+2024-08-07 17:38:21,744 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:38:21,744 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 17:38:21,744 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:38:21,744 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-08-07 17:38:21,744 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:38:21,744 - __main__ - INFO - Initializing GUI
+2024-08-07 17:38:21,744 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:38:21,745 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:38:21,745 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-08-07 17:38:21,745 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:38:21,750 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:38:21,750 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:40:41,260 - __main__ - INFO - Starting The Library application
+2024-08-07 17:40:41,261 - __main__ - INFO - Initializing Controller
+2024-08-07 17:40:41,261 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:40:41,261 - TheLibrary - DEBUG - Function '__init__' executed in 0.0003 seconds
+2024-08-07 17:40:41,261 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:40:41,261 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-08-07 17:40:41,261 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:40:41,262 - __main__ - INFO - Initializing GUI
+2024-08-07 17:40:41,262 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:40:41,262 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:40:41,262 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0002 seconds
+2024-08-07 17:40:41,262 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:40:41,266 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:40:41,266 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:40:55,040 - __main__ - INFO - Starting The Library application
+2024-08-07 17:40:55,041 - __main__ - INFO - Initializing Controller
+2024-08-07 17:40:55,041 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:40:55,041 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 17:40:55,041 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:40:55,041 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-08-07 17:40:55,041 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:40:55,041 - __main__ - INFO - Initializing GUI
+2024-08-07 17:40:55,041 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:40:55,041 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:40:55,042 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-08-07 17:40:55,042 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:40:55,047 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:40:55,047 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:44:15,963 - __main__ - INFO - Starting The Library application
+2024-08-07 17:44:15,963 - __main__ - INFO - Initializing Controller
+2024-08-07 17:44:15,963 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:44:15,963 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 17:44:15,964 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:44:15,964 - TheLibrary - DEBUG - Function '__init__' executed in 0.0004 seconds
+2024-08-07 17:44:15,964 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:44:15,964 - __main__ - INFO - Initializing GUI
+2024-08-07 17:44:15,964 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:44:15,964 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:44:15,964 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0002 seconds
+2024-08-07 17:44:15,964 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:44:15,969 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:44:15,969 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:52:55,482 - __main__ - INFO - Starting The Library application
+2024-08-07 17:52:55,483 - __main__ - INFO - Initializing Controller
+2024-08-07 17:52:55,483 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:52:55,483 - TheLibrary - DEBUG - Function '__init__' executed in 0.0002 seconds
+2024-08-07 17:52:55,483 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:52:55,483 - TheLibrary - DEBUG - Function '__init__' executed in 0.0004 seconds
+2024-08-07 17:52:55,483 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:52:55,483 - __main__ - INFO - Initializing GUI
+2024-08-07 17:52:55,483 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:52:55,483 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:52:55,483 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0002 seconds
+2024-08-07 17:52:55,484 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:52:55,488 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:52:55,488 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:53:08,443 - __main__ - INFO - Starting The Library application
+2024-08-07 17:53:08,443 - __main__ - INFO - Initializing Controller
+2024-08-07 17:53:08,443 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:53:08,444 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-08-07 17:53:08,444 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:53:08,444 - TheLibrary - DEBUG - Function '__init__' executed in 0.0012 seconds
+2024-08-07 17:53:08,445 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:53:08,445 - __main__ - INFO - Initializing GUI
+2024-08-07 17:53:08,445 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:53:08,445 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-08-07 17:53:08,445 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0006 seconds
+2024-08-07 17:53:08,446 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:53:08,450 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:53:08,450 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:56:13,861 - __main__ - INFO - Starting The Library application
+2024-08-07 17:56:13,861 - __main__ - INFO - Initializing Controller
+2024-08-07 17:56:13,861 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:56:13,861 - TheLibrary - DEBUG - Function '__init__' executed in 0.0003 seconds
+2024-08-07 17:56:13,861 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:56:13,862 - TheLibrary - DEBUG - Function '__init__' executed in 0.0007 seconds
+2024-08-07 17:56:13,862 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:56:13,862 - __main__ - INFO - Initializing GUI
+2024-08-07 17:56:13,862 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:56:13,862 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0002 seconds
+2024-08-07 17:56:13,862 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0004 seconds
+2024-08-07 17:56:13,862 - __main__ - ERROR - A critical error occurred while running the application
+Traceback (most recent call last):
+  File "main.py", line 74, in main
+  File "logger.py", line 133, in wrapper
+  File "gui.py", line 22, in __init__
+NameError: name 'get_user_data_dir' is not defined
+2024-08-07 17:56:13,866 - __main__ - INFO - Cleaning up resources
+2024-08-07 17:56:13,867 - __main__ - ERROR - Error destroying CustomTkinter context: module 'customtkinter' has no attribute 'DestroyApp'
+2024-08-07 17:56:19,309 - __main__ - INFO - Starting The Library application
+2024-08-07 17:56:19,310 - __main__ - INFO - Initializing Controller
+2024-08-07 17:56:19,310 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 17:56:19,310 - TheLibrary - DEBUG - Function '__init__' executed in 0.0003 seconds
+2024-08-07 17:56:19,310 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 17:56:19,310 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-08-07 17:56:19,310 - __main__ - INFO - Controller initialized successfully
+2024-08-07 17:56:19,310 - __main__ - INFO - Initializing GUI
+2024-08-07 17:56:19,310 - TheLibrary - INFO - Theme preference loaded: Dark mode = True
+2024-08-07 17:56:19,310 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:56:19,310 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 17:56:19,536 - TheLibrary - DEBUG - Sidebar setup completed
+2024-08-07 17:56:19,537 - TheLibrary - DEBUG - Function 'setup_sidebar' executed in 0.1286 seconds
+2024-08-07 17:56:19,538 - TheLibrary - INFO - Retrieved 0 collections
+2024-08-07 17:56:19,538 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-07 17:56:19,538 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-07 17:56:19,554 - TheLibrary - DEBUG - Main content setup completed
+2024-08-07 17:56:19,554 - TheLibrary - DEBUG - Function 'setup_main_content' executed in 0.0173 seconds
+2024-08-07 17:56:19,555 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-07 17:56:19,555 - TheLibrary - DEBUG - Function 'setup_settings_window' executed in 0.0013 seconds
+2024-08-07 17:56:19,556 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-07 17:56:19,556 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2455 seconds
+2024-08-07 17:56:19,556 - __main__ - INFO - GUI initialized successfully
+2024-08-07 17:56:19,556 - __main__ - INFO - Running GUI
+2024-08-07 17:56:25,272 - TheLibrary - INFO - Settings window displayed
+2024-08-07 17:56:28,886 - TheLibrary - INFO - Theme preference saved: Dark mode = 0
+2024-08-07 17:56:28,886 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0017 seconds
+2024-08-07 17:56:28,887 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0021 seconds
+2024-08-07 17:56:28,887 - TheLibrary - INFO - Theme changed to light
+2024-08-07 17:56:28,887 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0069 seconds
+2024-08-07 17:56:32,222 - TheLibrary - INFO - Theme preference saved: Dark mode = 1
+2024-08-07 17:56:32,223 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0014 seconds
+2024-08-07 17:56:32,223 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0017 seconds
+2024-08-07 17:56:32,224 - TheLibrary - INFO - Theme changed to dark
+2024-08-07 17:56:32,224 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0066 seconds
+2024-08-07 17:56:33,039 - TheLibrary - INFO - Theme preference saved: Dark mode = 0
+2024-08-07 17:56:33,039 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0016 seconds
+2024-08-07 17:56:33,040 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0020 seconds
+2024-08-07 17:56:33,040 - TheLibrary - INFO - Theme changed to light
+2024-08-07 17:56:33,040 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0070 seconds
+2024-08-07 17:56:33,443 - TheLibrary - INFO - Theme preference saved: Dark mode = 1
+2024-08-07 17:56:33,443 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0015 seconds
+2024-08-07 17:56:33,443 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0018 seconds
+2024-08-07 17:56:33,444 - TheLibrary - INFO - Theme changed to dark
+2024-08-07 17:56:33,444 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0067 seconds
+2024-08-07 21:28:27,877 - TheLibrary - INFO - GUI main loop started
+2024-08-07 21:28:27,878 - TheLibrary - DEBUG - Function 'run' executed in 12728.3217 seconds
+2024-08-07 21:28:27,878 - __main__ - INFO - GUI run completed
+2024-08-07 21:28:27,878 - __main__ - INFO - Cleaning up resources
+2024-08-07 21:28:27,878 - __main__ - WARNING - No method found to destroy CustomTkinter context
+2024-08-07 21:28:27,878 - __main__ - INFO - CustomTkinter context cleanup attempted
+2024-08-07 21:46:06,232 - __main__ - INFO - Starting The Library application
+2024-08-07 21:46:06,232 - __main__ - INFO - Initializing Controller
+2024-08-07 21:46:06,232 - TheLibrary - INFO - CollectionManager initialized
+2024-08-07 21:46:06,232 - TheLibrary - DEBUG - Function '__init__' executed in 0.0001 seconds
+2024-08-07 21:46:06,232 - TheLibrary - INFO - Controller initialized successfully
+2024-08-07 21:46:06,232 - TheLibrary - DEBUG - Function '__init__' executed in 0.0003 seconds
+2024-08-07 21:46:06,232 - __main__ - INFO - Controller initialized successfully
+2024-08-07 21:46:06,232 - __main__ - INFO - Initializing GUI
+2024-08-07 21:46:06,232 - TheLibrary - INFO - Theme preference loaded: Dark mode = 1
+2024-08-07 21:46:06,233 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 21:46:06,233 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0001 seconds
+2024-08-07 21:46:06,478 - TheLibrary - DEBUG - Sidebar setup completed
+2024-08-07 21:46:06,478 - TheLibrary - DEBUG - Function 'setup_sidebar' executed in 0.1337 seconds
+2024-08-07 21:46:06,479 - TheLibrary - INFO - Retrieved 0 collections
+2024-08-07 21:46:06,479 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-07 21:46:06,479 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-07 21:46:06,493 - TheLibrary - DEBUG - Main content setup completed
+2024-08-07 21:46:06,493 - TheLibrary - DEBUG - Function 'setup_main_content' executed in 0.0154 seconds
+2024-08-07 21:46:06,495 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-07 21:46:06,495 - TheLibrary - DEBUG - Function 'setup_settings_window' executed in 0.0015 seconds
+2024-08-07 21:46:06,495 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-07 21:46:06,495 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2625 seconds
+2024-08-07 21:46:06,495 - __main__ - INFO - GUI initialized successfully
+2024-08-07 21:46:06,495 - __main__ - INFO - Running GUI
+2024-08-07 21:46:44,834 - TheLibrary - INFO - Settings window displayed
+2024-08-07 21:46:45,892 - TheLibrary - INFO - Settings window displayed
+2024-08-07 21:46:47,007 - TheLibrary - INFO - Theme preference saved: Dark mode = 0
+2024-08-07 21:46:47,008 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0028 seconds
+2024-08-07 21:46:47,008 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0032 seconds
+2024-08-07 21:46:47,009 - TheLibrary - INFO - Theme changed to light
+2024-08-07 21:46:47,009 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0082 seconds
+2024-08-07 21:46:48,904 - TheLibrary - INFO - Theme preference saved: Dark mode = 1
+2024-08-07 21:46:48,905 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0014 seconds
+2024-08-07 21:46:48,905 - TheLibrary - DEBUG - Function 'save_theme_preference' executed in 0.0016 seconds
+2024-08-07 21:46:48,905 - TheLibrary - INFO - Theme changed to dark
+2024-08-07 21:46:48,905 - TheLibrary - DEBUG - Function 'toggle_theme' executed in 0.0052 seconds
+2024-08-07 21:47:04,620 - TheLibrary - INFO - GUI main loop started
+2024-08-07 21:47:04,621 - TheLibrary - DEBUG - Function 'run' executed in 58.1254 seconds
+2024-08-07 21:47:04,621 - __main__ - INFO - GUI run completed
+2024-08-07 21:47:04,621 - __main__ - INFO - Cleaning up resources
+2024-08-07 21:47:04,621 - __main__ - WARNING - No method found to destroy CustomTkinter context
+2024-08-07 21:47:04,621 - __main__ - INFO - CustomTkinter context cleanup attempted
+2024-08-08 14:20:24,079 - __main__ - INFO - Starting The Library application
+2024-08-08 14:20:24,079 - __main__ - INFO - Initializing Controller
+2024-08-08 14:20:24,079 - TheLibrary - INFO - CollectionManager initialized
+2024-08-08 14:20:24,080 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-08-08 14:20:24,080 - TheLibrary - INFO - Controller initialized successfully
+2024-08-08 14:20:24,080 - TheLibrary - DEBUG - Function '__init__' executed in 0.0007 seconds
+2024-08-08 14:20:24,080 - __main__ - INFO - Controller initialized successfully
+2024-08-08 14:20:24,080 - __main__ - INFO - Initializing GUI
+2024-08-08 14:20:24,080 - TheLibrary - INFO - Theme preference loaded: Dark mode = 1
+2024-08-08 14:20:24,080 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0002 seconds
+2024-08-08 14:20:24,080 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-08-08 14:20:24,366 - TheLibrary - DEBUG - Sidebar setup completed
+2024-08-08 14:20:24,366 - TheLibrary - DEBUG - Function 'setup_sidebar' executed in 0.1545 seconds
+2024-08-08 14:20:24,368 - TheLibrary - INFO - Retrieved 0 collections
+2024-08-08 14:20:24,368 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-08 14:20:24,368 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-08-08 14:20:24,383 - TheLibrary - DEBUG - Main content setup completed
+2024-08-08 14:20:24,384 - TheLibrary - DEBUG - Function 'setup_main_content' executed in 0.0173 seconds
+2024-08-08 14:20:24,385 - TheLibrary - DEBUG - Settings window setup completed
+2024-08-08 14:20:24,385 - TheLibrary - DEBUG - Function 'setup_settings_window' executed in 0.0013 seconds
+2024-08-08 14:20:24,385 - TheLibrary - INFO - GUI setup completed successfully
+2024-08-08 14:20:24,385 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.3048 seconds
+2024-08-08 14:20:24,385 - __main__ - INFO - GUI initialized successfully
+2024-08-08 14:20:24,385 - __main__ - INFO - Running GUI
+2024-08-08 14:20:30,452 - TheLibrary - DEBUG - Function 'add_new_collection' executed in 1.3317 seconds
+2024-08-08 14:20:32,647 - TheLibrary - INFO - GUI main loop started
+2024-08-08 14:20:32,647 - TheLibrary - DEBUG - Function 'run' executed in 8.2614 seconds
+2024-08-08 14:20:32,647 - __main__ - INFO - GUI run completed
+2024-08-08 14:20:32,647 - __main__ - INFO - Cleaning up resources
+2024-08-08 14:20:32,647 - __main__ - WARNING - No method found to destroy CustomTkinter context
+2024-08-08 14:20:32,647 - __main__ - INFO - CustomTkinter context cleanup attempted
+2024-10-12 00:03:42,089 - __main__ - INFO - Starting The Library application
+2024-10-12 00:03:42,089 - __main__ - INFO - Initializing Controller
+2024-10-12 00:03:42,089 - TheLibrary - INFO - CollectionManager initialized
+2024-10-12 00:03:42,090 - TheLibrary - DEBUG - Function '__init__' executed in 0.0005 seconds
+2024-10-12 00:03:42,090 - TheLibrary - INFO - Controller initialized successfully
+2024-10-12 00:03:42,090 - TheLibrary - DEBUG - Function '__init__' executed in 0.0010 seconds
+2024-10-12 00:03:42,090 - __main__ - INFO - Controller initialized successfully
+2024-10-12 00:03:42,090 - __main__ - INFO - Initializing GUI
+2024-10-12 00:03:42,091 - TheLibrary - INFO - Theme preference loaded: Dark mode = 1
+2024-10-12 00:03:42,091 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-10-12 00:03:42,091 - TheLibrary - DEBUG - Function 'load_theme_preference' executed in 0.0003 seconds
+2024-10-12 00:03:42,334 - TheLibrary - DEBUG - Sidebar setup completed
+2024-10-12 00:03:42,334 - TheLibrary - DEBUG - Function 'setup_sidebar' executed in 0.0818 seconds
+2024-10-12 00:03:42,336 - TheLibrary - INFO - Retrieved 0 collections
+2024-10-12 00:03:42,336 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0001 seconds
+2024-10-12 00:03:42,336 - TheLibrary - DEBUG - Function 'get_collections' executed in 0.0002 seconds
+2024-10-12 00:03:42,351 - TheLibrary - DEBUG - Main content setup completed
+2024-10-12 00:03:42,351 - TheLibrary - DEBUG - Function 'setup_main_content' executed in 0.0170 seconds
+2024-10-12 00:03:42,353 - TheLibrary - DEBUG - Settings window setup completed
+2024-10-12 00:03:42,353 - TheLibrary - DEBUG - Function 'setup_settings_window' executed in 0.0015 seconds
+2024-10-12 00:03:42,353 - TheLibrary - INFO - GUI setup completed successfully
+2024-10-12 00:03:42,353 - TheLibrary - DEBUG - Function 'setup_gui' executed in 0.2627 seconds
+2024-10-12 00:03:42,354 - __main__ - INFO - GUI initialized successfully
+2024-10-12 00:03:42,354 - __main__ - INFO - Running GUI
+2024-10-12 00:03:46,281 - TheLibrary - INFO - Settings window displayed
+2024-10-12 00:03:48,628 - TheLibrary - INFO - GUI main loop started
+2024-10-12 00:03:48,628 - TheLibrary - DEBUG - Function 'run' executed in 6.2742 seconds
+2024-10-12 00:03:48,628 - __main__ - INFO - GUI run completed
+2024-10-12 00:03:48,628 - __main__ - INFO - Cleaning up resources
+2024-10-12 00:03:48,628 - __main__ - WARNING - No method found to destroy CustomTkinter context
+2024-10-12 00:03:48,628 - __main__ - INFO - CustomTkinter context cleanup attempted
